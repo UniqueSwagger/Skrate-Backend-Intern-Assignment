@@ -1,14 +1,8 @@
 import express, { Router, Request, Response } from "express";
 import userCollection from "../Models/userInfo";
+import { userExist } from "../Validations/validations";
 const ObjectId = require("mongodb").ObjectID;
 const router: Router = express.Router();
-
-const userExist = (exist: object | null, httpMethod: string, res: Response) => {
-  if (exist && httpMethod === "POST")
-    return res.status(400).send({ message: "User already exists" });
-  else if (!exist && (httpMethod === "PATCH" || httpMethod === "DELETE"))
-    return res.status(400).send({ message: "User does not exist" });
-};
 
 router
   .post("/new", async (req: Request, res: Response) => {
