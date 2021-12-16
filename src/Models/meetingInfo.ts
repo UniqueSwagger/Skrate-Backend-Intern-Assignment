@@ -1,15 +1,15 @@
-import mongoose from "mongoose";
+import { Date, Schema, model } from "mongoose";
 
 //meeting interface
 interface Meeting {
   uid1: string;
   uid2: string;
   date: string;
+  createdAt: Date;
 }
 
 //create a schema for meetings
-
-const meetingSchema = new mongoose.Schema<Meeting>({
+const meetingSchema = new Schema<Meeting>({
   uid1: {
     type: String,
     required: true,
@@ -22,4 +22,11 @@ const meetingSchema = new mongoose.Schema<Meeting>({
     type: String,
     required: true,
   },
+  createdAt: {
+    type: Date,
+    immutable: true,
+    default: Date.now(),
+  },
 });
+
+export default model("meetingCollection", meetingSchema);
