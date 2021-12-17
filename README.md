@@ -55,7 +55,7 @@ And moreover I have used `@types/express` ,`@types/node`, `@types/node`, `@types
 
 `cors` is a node.js package that allows making cross-origin HTTP requests. It is used to allow requests from different origins.
 
-`dotenv` is a package that loads environment variables from a .env file into process.env. It is used to hide the credentials of the database. I have used it on this project but for the assignment, testing purposes I didn't hide it.
+`dotenv` is a package that loads environment variables from a .env file into process.env. It is used to hide the credentials of the database. I have used it on this project but for assignment testing purposes I didn't hide it.
 
 ## Examples of API calls
 
