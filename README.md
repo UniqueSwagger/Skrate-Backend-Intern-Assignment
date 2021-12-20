@@ -66,7 +66,7 @@ And moreover I have used `@types/express` ,`@types/node`, `@types/node`, `@types
 ```
 POST /users/new
 
-In the body of the request, you should send pass the data like this:
+In the body of the request, you should pass the data like this:
 {
   "username": "name of the user",
 }
@@ -86,7 +86,7 @@ does not require any data
 ```
 Patch /users/update
 
-In the body of the request, you should send pass the data like this:
+In the body of the request, you should pass the data like this:
 {
   "uid": "_id of the user",
   "userName": "new name of the user",
@@ -98,7 +98,7 @@ In the body of the request, you should send pass the data like this:
 ```
 DELETE /users/delete
 
-In the body of the request, you should send pass the data like this:
+In the body of the request, you should pass the data like this:
 {
   "uid": "_id of the user to delete",
 }
@@ -111,7 +111,7 @@ In the body of the request, you should send pass the data like this:
 ```
 POST /meetings/new
 
-In the body of the request, you should send pass the data like this:
+In the body of the request, you should pass the data like this:
 {
   "uid1": "any unique id",
   "uid2": "any unique id",
@@ -132,7 +132,7 @@ does not require any data
 ```
 Patch /meetings/update
 
-In the body of the request, you should send pass the data like this:
+In the body of the request, you should pass the data like this:
  {
     "meetingUid":"_id of the meeting",
     "date": "date of the meeting (format: MM-DD-YYYY)",
@@ -144,7 +144,7 @@ In the body of the request, you should send pass the data like this:
 ```
 DELETE /meetings/delete
 
-In the body of the request, you should send pass the data like this:
+In the body of the request, you should pass the data like this:
 {
   "meetingUid": "_id of the meeting you want to delete",
 }
